@@ -14,6 +14,23 @@ python -m f1
 
 This prints the standings for a short made-up season.
 
+Want to see who made the podium?
+
+```bash
+python -m f1 --podium
+```
+
+```
+                 🏆
+               Norris
+ Verstappen    58 pts
+   58 pts    ███ 1 ████   Leclerc
+ ███ 2 ████  ██████████    52 pts
+ ██████████  ██████████  ███ 3 ████
+ ██████████  ██████████  ██████████
+====================================
+```
+
 ## Run the tests
 
 ```bash
@@ -27,6 +44,7 @@ The tests also run automatically on GitHub every time code is pushed. Look for t
 | Path | What it is |
 | --- | --- |
 | `f1/points.py` | The actual code: points per position, scoring a race, building standings |
+| `f1/podium.py` | Draws the top three on a little podium |
 | `f1/__main__.py` | What runs when you type `python -m f1` |
 | `tests/` | Checks that the code does what it should |
 | `.github/workflows/tests.yml` | Runs the tests on GitHub automatically |
